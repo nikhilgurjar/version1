@@ -30,6 +30,10 @@ const customerSchema = new mongoose.Schema({
     type: String,
     ref: "",
   },
+  password:{
+    type:String,
+    required:true
+  }
 });
 
 mongoose.model("Customer", customerSchema);

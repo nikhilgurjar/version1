@@ -16,6 +16,10 @@ const adminSchema = new mongoose.Schema({
     minlength: 10,
     required: true,
   },
+  password:{
+    type:String,
+    required:true
+  }
 });
 
 mongoose.model("Admin", adminSchema);
