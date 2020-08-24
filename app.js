@@ -28,8 +28,7 @@ require("./models/serviceSchema");
 require("./models/adminSchema");
 
 app.use("/", require('./routes/index'));
-app.use("/distributor",require('./routes/distributorsash'));
-app.use("/admin",require('./routes/admindash'));
+app.use("/auth",require('./routes/auth'));
 
 app.listen(PORT, () => {
   console.log("server is running on", PORT);
